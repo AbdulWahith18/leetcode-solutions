@@ -78,9 +78,9 @@ Constraints:
 ## Solution
 
 **Language:** Java  
-**Runtime:** 5 ms (beats 66.41%)  
-**Memory:** 126.7 MB (beats 71.37%)  
-**Submitted:** 2026-09-05T02:21:39.002Z  
+**Runtime:** 0 ms  
+**Memory:** 42.7 MB  
+**Submitted:** 2026-09-05T02:21:32.118Z  
 
 ```java
 class Solution {
@@ -103,9 +103,9 @@ class Solution {
         int res=-1,com=Integer.MAX_VALUE;
         for(int i = 0; i < l; i++) 
         {
-            if(max[i] - min[i] <= k&&i<com)
+            if(max[i] - min[i] <= k&&max[i]-min[i]<com)
             {
-                com=i;
+                com=max[i]-min[i];
                 res=i;
             }       
         }
