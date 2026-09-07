@@ -18,9 +18,9 @@ class Solution {
         int res=-1,com=Integer.MAX_VALUE;
         for(int i = 0; i < l; i++) 
         {
-            if(max[i] - min[i] <= k&&max[i]-min[i]<com)
+            if(max[i] - min[i] <= k&&i<com)
             {
-                com=max[i]-min[i];
+                com=i;
                 res=i;
             }       
         }
